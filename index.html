@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="title-container">
+            <h1>Expense Tracker</h1>
+        </div>
+        <div class="form-container">
+            <form id="form">
+                <label for="items">Name</label>
+                <input type="text" id="items" placeholder="Expense name" required>
+                <label for="dates">Date</label>
+                <input type="date" id="dates" required>
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" placeholder="0$" required> 
+                <label for="category">Category</label>
+                <select id="category">
+                    <option value="housing">Housing</option>
+                    <option value="transportation">Transportation</option>
+                    <option value="food">Groceries</option>
+                    <option value="utilities">Utilities</option>
+                    <option value="insurance">Insurance</option>
+                    <option value="medical">Medical & Healthcare</option>
+                    <option value="personal">Personal Spending</option>
+                </select>
+                <input type="button" id="submit" value="Add Expense">
+            </form>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expense name</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+
+                </tbody>
+            </table>
+        </div>
+        <div id="total-container">Total:</div>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>

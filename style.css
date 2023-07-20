@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+.main{
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-container{
+    margin: 50px;
+
+}
+
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    width:850px;
+    height: 220px;
+    border-radius: 20px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+label{
+    width: 60px;
+    color: black;
+    font-weight: bold;
+}
+
+input[type=text], input[type=date], input[type=number], select {
+    font-weight: bold;
+    width: 320px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+input[type=button]{
+    background-color: rgb(105, 201, 105);
+    font-weight: bolder;
+    font-size: larger;
+    width: 200px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+input[type=submit]:hover{
+    background-color: #45a049;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+table{
+    border-collapse: collapse;
+    width: 850px;
+    margin-top: 50px;
+}
+
+#total-container{
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
